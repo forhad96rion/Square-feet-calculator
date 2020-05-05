@@ -1,0 +1,39 @@
+<html>
+ <head>
+ <Title>Land Management System</Title>
+ <link rel="shortcut icon" href="bd.jpg" type="image/x-icon">
+ </head>
+<center><body style="background-color:LightGray;">
+ <h1><i>Square Footage Calculator</i><h1>
+ <hr>
+ <h1><i>Enter Length</i></h1>
+ <input type="digits" id="Base"/>
+ <BR><BR><hr>
+ <h1><i>Enter Width</i></h1>
+ <input type="digits" id="Height"/>
+ <BR><BR><hr>
+ 
+<input 
+type="button" 
+id="btnArea"
+onclick="Area();"
+value = "Compute"/><br><br>
+<h3><i>(click compute button)</i><h3>
+<hr>
+ <h1><i>Result</i></h1>
+ <div id = "divresult"></div><h3><i>(square feet)</i><h3><hr>
+ </body>
+ </center>
+ <script>
+function Area(){
+var Base = document.getElementById("Base"); 
+ var Height = document.getElementById("Height");
+var basevalue = Base.value;
+var heightvalue = Height.value;
+var result = (basevalue*heightvalue);
+var divresult=document.getElementById("divresult");
+divresult.innerHTML=result;
+}
+ </script>
+
+</html>
